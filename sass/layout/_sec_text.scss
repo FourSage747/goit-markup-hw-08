@@ -1,0 +1,44 @@
+.text {
+    /* display: flex;
+    justify-content: space-around; */
+    padding: 94px 0;
+
+    h3 {
+        margin: 0;
+        margin-bottom: 15px;
+        @include font(700, 14px, 16px);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--title-color);
+    }
+    
+    p {
+        margin: 0;
+        @include font(400, 14px, 24px);
+        letter-spacing: 0.03em;
+        color: var(--ph-color);
+    }
+
+    ul {
+        padding: 0;
+        display: flex;
+        margin: 0;
+        gap: 30px;
+    }
+    
+    ul div {
+        width: 270px;
+        height: 120px;
+        background-color: var(--svg3-color);
+        border-radius: 4px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    li {
+        list-style-type: none;
+        width: 270px;
+    }
+}
