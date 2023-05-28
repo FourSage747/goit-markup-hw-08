@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header__container">
             <nav>
                 <a class="logo" href="index.html"><span>Web</span>Studio</a>
                 <ul class="menu">
@@ -33,6 +33,35 @@
                             <use href="./imeges/page1/sprite.svg#icon-a2"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            <button type="button" data-menu-open>
+                <svg width="24" height="16">
+                    <use href="./imeges/page1/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="modal-menu" data-menu>
+            <div class="container modal-container">
+                <button type="button" data-menu-close>
+                    <svg width="19" height="19">
+                        <use href="./imeges/page1/sprite4.svg#icon-Vector"></use>
+                    </svg>
+                </button>
+                <ul class="modal-mn">
+                    <li><a href="./index.html">Студія</a></li>
+                    <li><a href="./portfolio.html">Портфоліо</a></li>
+                    <li><a href="">Контакти</a></li>
+                </ul>
+                <ul class="modal-address">
+                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <ul class="modal-contacts">
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -99,13 +128,16 @@
             <div class="container">
                 <h2>Чим ми займаємося</h2>
                 <ul>
-                    <li><img src="./imeges/page1/box1.jpg" alt="Програмування" width="370">
+                    <li><img srcset="./imeges/page1/box1.jpg 1x, ./imeges/page1/box1@2x.jpg 2x"
+                         src="./imeges/page1/box1.jpg" alt="Програмування" width="370">
                         <p>Десктопні додатки</p>
                     </li>
-                    <li><img src="./imeges/page1/box2.jpg" alt="Моб.додатки" width="370">
+                    <li><img srcset="./imeges/page1/box2.jpg 1x, ./imeges/page1/box2@2x.jpg 2x"
+                         src="./imeges/page1/box2.jpg" alt="Моб.додатки" width="370">
                         <p>Мобільні додатки</p>
                     </li>
-                    <li><img src="./imeges/page1/box3.jpg" alt="Ігри" width="370">
+                    <li><img srcset="./imeges/page1/box3.jpg 1x, ./imeges/page1/box3@2x.jpg 2x"
+                         src="./imeges/page1/box3.jpg" alt="Ігри" width="370">
                         <p>Дизайнерські рішення</p>
                     </li>
                 </ul>
@@ -116,7 +148,16 @@
                 <h2>Наша команда</h2>
                 <ul class="team">
                     <li class="block">
-                        <img src="./imeges/page1/img.jpg" alt="фото" width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./imeges/page1/human.webp 1x, ./imeges/page1/human@2x.webp 2x"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./imeges/page1/human.jpg 1x, ./imeges/page1/human@2x.jpg 2x"
+                            />
+                            <img src="./imeges/page1/human.jpg" alt="фото">
+                        </picture>
                         <div class="photo">
                             <h3>Ігор Дем'яненко</h3>
                             <p>Product Designer</p>
@@ -153,7 +194,16 @@
                         </div>
                     </li>
                     <li class="block">
-                        <img src="./imeges/page1/img(3).jpg" alt="фото" width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./imeges/page1/human1.webp 1x, ./imeges/page1/human1@2x.webp 2x"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./imeges/page1/human1.jpg 1x, ./imeges/page1/human1@2x.jpg 2x"
+                            />
+                            <img src="./imeges/page1/human1.jpg" alt="фото">
+                        </picture>
                         <div class="photo">
                             <h3>Ольга Рєпіна</h3>
                             <p>Frontend Developer</p>
@@ -190,7 +240,16 @@
                         </div>
                     </li>
                     <li class="block">
-                        <img src="./imeges/page1/img(1).jpg" alt="фото" width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./imeges/page1/human2.webp 1x, ./imeges/page1/human2@2x.webp 2x"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./imeges/page1/human2.jpg 1x, ./imeges/page1/human2@2x.jpg 2x"
+                            />
+                            <img src="./imeges/page1/human2.jpg" alt="фото">
+                        </picture>
                         <div class="photo">
                             <h3>Микола Тарасов</h3>
                             <p>Marketing</p>
@@ -227,7 +286,16 @@
                         </div>
                     </li>
                     <li class="block">
-                        <img src="./imeges/page1/img(2).jpg" alt="фото" width="270" height="260">
+                        <picture>
+                            <source
+                                srcset="./imeges/page1/human3.webp 1x, ./imeges/page1/human3@2x.webp 2x"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="./imeges/page1/human3.jpg 1x, ./imeges/page1/human3@2x.jpg 2x"
+                            />
+                            <img src="./imeges/page1/human3.jpg" alt="фото">
+                        </picture>
                         <div class="photo">
                             <h3>Михайло Єрмаков</h3>
                             <p>UI Designer</p>
@@ -322,7 +390,7 @@
                 <a class="logo1" href=""><span>Web</span>Studio</a>
                 <address class="address1">
                     <ul>
-                        <li><a class="a" href="" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки,
+                        <li><a href="" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки,
                                 26</a></li>
                         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -427,8 +495,9 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div> 
     <script src="./scripts/modal.js"></script>
+    <script src="./scripts/menu.js"></script>
 </body>
 
 </html>

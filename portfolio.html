@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header__container">
             <nav>
                 <a class="logo" href="index.html"><span>Web</span>Studio</a>
                 <ul class="menu">
@@ -33,6 +33,35 @@
                             <use href="./imeges/page1/sprite.svg#icon-a2"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            <button type="button" data-menu-open>
+                <svg width="24" height="16">
+                    <use href="./imeges/page1/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="modal-menu" data-menu>
+            <div class="container modal-container">
+                <button type="button" data-menu-close>
+                    <svg width="19" height="19">
+                        <use href="./imeges/page1/sprite4.svg#icon-Vector"></use>
+                    </svg>
+                </button>
+                <ul class="modal-mn">
+                    <li><a href="./index.html">Студія</a></li>
+                    <li><a href="./portfolio.html">Портфоліо</a></li>
+                    <li><a href="">Контакти</a></li>
+                </ul>
+                <ul class="modal-address">
+                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <ul class="modal-contacts">
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -50,12 +79,39 @@
                     <li>
                         <a href="">
                             <div class="div2">
-                                <img src="./imeges/page2/img1.jpg" alt="" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio.webp 1x, ./imeges/page2/desktop/desktop-portfolio@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio.jpg 1x, ./imeges/page2/desktop/desktop-portfolio@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio.webp 1x, ./imeges/page2/tablet/tablet-portfolio@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio.jpg 1x, ./imeges/page2/tablet/tablet-portfolio@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio.webp 1x, ./imeges/page2/mobile/mobile-portfolio@2x.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio.jpg 1x, ./imeges/page2/mobile/mobile-portfolio@2x.jpg 2x"
+                                    />
+                                    <img src="" alt="">
+                                </picture>
                                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                 </p>
                             </div>
-                            <div class="div1">
+                            <div class="div1 pad">
                                 <h3>Технокряк</h3>
                                 <p>Веб-сайт</p>
                             </div>
@@ -64,7 +120,34 @@
                     <li>
                         <a href="">
                             <div class="div2">
-                                <img src="./imeges/page2/img2.jpg" alt="" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio1.webp 1x, ./imeges/page2/desktop/desktop-portfolio1@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio1.jpg 1x, ./imeges/page2/desktop/desktop-portfolio1@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio1.webp 1x, ./imeges/page2/tablet/tablet-portfolio1@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio1.jpg 1x, ./imeges/page2/tablet/tablet-portfolio1@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio1.webp 1x, ./imeges/page2/mobile/mobile-portfolio1@2x.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio1.jpg 1x, ./imeges/page2/mobile/mobile-portfolio1@2x.jpg 2x"
+                                    />
+                                    <img src="" alt="">
+                                </picture>
                                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                 </p>
@@ -78,7 +161,34 @@
                     <li>
                         <a href="">
                             <div class="div2">
-                                <img src="./imeges/page2/img3.jpg" alt="" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio2.webp 1x, ./imeges/page2/desktop/desktop-portfolio2@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio2.jpg 1x, ./imeges/page2/desktop/desktop-portfolio2@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio2.webp 1x, ./imeges/page2/tablet/tablet-portfolio2@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio2.jpg 1x, ./imeges/page2/tablet/tablet-portfolio2@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio2.webp 1x, ./imeges/page2/mobile/mobile-portfolio2@2x.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio2.jpg 1x, ./imeges/page2/mobile/mobile-portfolio2@2x.jpg 2x"
+                                    />
+                                    <img src="" alt="">
+                                </picture>
                                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                 </p>
@@ -92,7 +202,34 @@
                     <li>
                         <a href="">
                             <div class="div2">
-                                <img src="./imeges/page2/img4.jpg" alt="" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio3.webp 1x, ./imeges/page2/desktop/desktop-portfolio3@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio3.jpg 1x, ./imeges/page2/desktop/desktop-portfolio3@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio3.webp 1x, ./imeges/page2/tablet/tablet-portfolio3@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio3.jpg 1x, ./imeges/page2/tablet/tablet-portfolio3@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio3.webp 1x, ./imeges/page2/mobile/mobile-portfolio3@2x.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio3.jpg 1x, ./imeges/page2/mobile/mobile-portfolio3@2x.jpg 2x"
+                                    />
+                                    <img src="" alt="">
+                                </picture>
                                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                 </p>
@@ -106,7 +243,34 @@
                     <li>
                         <a href="">
                             <div class="div2">
-                                <img src="./imeges/page2/img5.jpg" alt="" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio4.webp 1x, ./imeges/page2/desktop/desktop-portfolio4@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio4.jpg 1x, ./imeges/page2/desktop/desktop-portfolio4@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio4.webp 1x, ./imeges/page2/tablet/tablet-portfolio4@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio4.jpg 1x, ./imeges/page2/tablet/tablet-portfolio4@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio4.webp 1x, ./imeges/page2/mobile/mobile-portfolio4@2x.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio4.jpg 1x, ./imeges/page2/mobile/mobile-portfolio4@2x.jpg 2x"
+                                    />
+                                    <img src="" alt="">
+                                </picture>
                                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                 </p>
@@ -120,7 +284,34 @@
                     <li>
                         <a href="">
                             <div class="div2">
-                                <img src="./imeges/page2/img6.jpg" alt="" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio5.webp 1x, ./imeges/page2/desktop/desktop-portfolio5@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio5.jpg 1x, ./imeges/page2/desktop/desktop-portfolio5@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio5.webp 1x, ./imeges/page2/tablet/tablet-portfolio5@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio5.jpg 1x, ./imeges/page2/tablet/tablet-portfolio5@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio5.webp 1x, ./imeges/page2/mobile/mobile-portfolio5@2x.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio5.jpg 1x, ./imeges/page2/mobile/mobile-portfolio5@2x.jpg 2x"
+                                    />
+                                    <img src="" alt="">
+                                </picture>
                                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                 </p>
@@ -134,7 +325,34 @@
                     <li>
                         <a href="">
                             <div class="div2">
-                                <img src="./imeges/page2/img7.jpg" alt="" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio6.webp 1x, ./imeges/page2/desktop/desktop-portfolio6@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio6.jpg 1x, ./imeges/page2/desktop/desktop-portfolio6@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio6.webp 1x, ./imeges/page2/tablet/tablet-portfolio6@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio6.jpg 1x, ./imeges/page2/tablet/tablet-portfolio6@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio6.webp 1x, ./imeges/page2/mobile/mobile-portfolio6@2x.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio6.jpg 1x, ./imeges/page2/mobile/mobile-portfolio6@2x.jpg 2x"
+                                    />
+                                    <img src="" alt="">
+                                </picture>
                                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                 </p>
@@ -148,7 +366,34 @@
                     <li>
                         <a href="">
                             <div class="div2">
-                                <img src="./imeges/page2/img8.jpg" alt="" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio7.webp 1x, ./imeges/page2/desktop/desktop-portfolio7@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio7.jpg 1x, ./imeges/page2/desktop/desktop-portfolio7@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio7.webp 1x, ./imeges/page2/tablet/tablet-portfolio7@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio7.jpg 1x, ./imeges/page2/tablet/tablet-portfolio7@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio7.webp 1x, ./imeges/page2/mobile/mobile-portfolio7@2x.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio7.jpg 1x, ./imeges/page2/mobile/mobile-portfolio7@2x.jpg 2x"
+                                    />
+                                    <img src="" alt="">
+                                </picture>
                                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                 </p>
@@ -162,7 +407,34 @@
                     <li>
                         <a href="">
                             <div class="div2">
-                                <img src="./imeges/page2/img9.jpg" alt="" width="360">
+                                <picture>
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio8.webp 1x, ./imeges/page2/desktop/desktop-portfolio8@2x.webp 2x"
+                                        media="(min-width: 1200px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/desktop/desktop-portfolio8.jpg 1x, ./imeges/page2/desktop/desktop-portfolio8@2x.jpg 2x"
+                                        media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio8.webp 1x, ./imeges/page2/tablet/tablet-portfolio8@2x.webp 2x"
+                                        media="(min-width: 768px)"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/tablet/tablet-portfolio8.jpg 1x, ./imeges/page2/tablet/tablet-portfolio8@2x.jpg 2x"
+                                        media="(min-width: 768px)"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio8.webp 1x, ./imeges/page2/mobile/mobile-portfolio8@2x.webp 2x"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        srcset="./imeges/page2/mobile/mobile-portfolio8.jpg 1x, ./imeges/page2/mobile/mobile-portfolio8@2x.jpg 2x"
+                                    />
+                                    <img src="" alt="">
+                                </picture>
                                 <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                                 </p>
@@ -239,6 +511,7 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/menu.js"></script>
 </body>
 
 </html>
