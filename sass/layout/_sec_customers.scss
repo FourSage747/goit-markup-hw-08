@@ -1,3 +1,10 @@
+@media screen and (max-width: 480px) {
+    .customers{
+        li{
+            margin: auto;
+        }
+    }
+}
 .customers{
     padding: 60px 0;
 
@@ -9,8 +16,8 @@
     }
 
     li {
-        width: 210px;
-        height: 92px;
+        width: 13,125em;
+        height: 5,75em;
     }
 
 

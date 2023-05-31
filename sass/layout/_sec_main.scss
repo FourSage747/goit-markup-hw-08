@@ -28,10 +28,10 @@
      h1 {
          @include font(900, 26px, 42px);
          text-align: center;
+         width: 22,5em;
          letter-spacing: 0.06em;
          text-transform: uppercase;
          margin: 0 auto;
-         width: 360px;
          color: var(--text-color-2);
      }
 
@@ -51,13 +51,23 @@
          background-size: cover;
      }
  }
-
+ @media screen and (max-height: 650px) and (max-width: 400px) {
+    .main{
+        h1{
+            @include font(900, 20px, 36px);
+        }
+    }
+ }
  @media screen and (min-width: 768px) {
      .main {
          background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                  rgba(47, 48, 58, 0.4)),
              url(../imeges/page1/tabletbg.jpg);
          background-size: cover;
+
+         h1{
+            width: 360px;
+        }
      }
 
      @media (min-device-pixel-ratio: 2),
