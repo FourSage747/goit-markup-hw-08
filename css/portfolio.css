@@ -89,6 +89,10 @@ header button:hover, header button:focus {
   fill: var(--main-color);
 }
 
+.modal-mn .st {
+  color: var(--main-color);
+}
+
 .header__container {
   display: flex;
   align-items: center;
