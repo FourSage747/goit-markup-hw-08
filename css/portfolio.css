@@ -533,6 +533,14 @@ section {
   margin: 0;
 }
 
+@media screen and (max-height: 650px) and (max-width: 400px) {
+  .div2 p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.75;
+    padding: 33px 14px;
+  }
+}
 @media screen and (min-width: 768px) {
   .img {
     display: flex;
