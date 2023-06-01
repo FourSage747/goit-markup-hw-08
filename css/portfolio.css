@@ -124,6 +124,7 @@ header button:hover, header button:focus {
   position: absolute;
   top: 0;
   right: 15px;
+  transform: translateY(-100%);
 }
 
 .modal-mn a {
@@ -439,6 +440,14 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-height: 650px) and (max-width: 400px) {
+  .button {
+    width: 280px;
+  }
+  .but {
+    padding: 3px 11px;
+  }
+}
 @media screen and (min-width: 768px) {
   .button {
     width: 100%;
@@ -453,6 +462,9 @@ section {
   section {
     padding: 94px 0;
   }
+  .button {
+    margin-bottom: 50px;
+  }
 }
 .img a {
   display: flex;
@@ -465,6 +477,8 @@ section {
 }
 .img img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 .img li:nth-child(-n+8) {
   margin-bottom: 30px;
