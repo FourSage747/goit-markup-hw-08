@@ -1203,7 +1203,7 @@ label {
   outline: 2px solid var(--main-color);
 }
 
-@media screen and (max-height: 700px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .modal {
     width: 280px;
     height: 439px;
